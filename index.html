@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            background-color: #0A192F;
+            color: white;
+        }
+
+        a,
+        button {
+            color: #C0C0C0;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        a:hover,
+        button:hover {
+            color: #FFFFFF;
+            background-color: #1C2541;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeIn 1s ease;
+        }
+
+        .small-note {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .reveal,
+        .scroll-animation {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .reveal.active,
+        .scroll-animation.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .nav-hidden,
+        .subscribe-hidden {
+            transform: translateY(-100%);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .subscribe-hidden {
+            transform: translateY(100%);
+        }
+
+        .work-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #1C2541;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .work-button:hover {
+            background-color: #0A192F;
+            transform: scale(1.05);
+        }
+
+        .email-link {
+            color: white;
+            /* Or any color of your choice */
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Portfolio Showcase</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact" role="button">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome</h2>
+                    <h3>The best my mind has to offer.</h3>
+                </hgroup>
+                <figure>
+                    <img src="https://source.unsplash.com/1600x900/?fantasy" alt="Fantasy World" />
+                    <figcaption><a href="https://unsplash.com/s/photos/fantasy" target="_blank">Image Source</a>
+                    </figcaption>
+                </figure>
+                <h2>About me</h2>
+                <h4>Introduction</h4>
+                <p>I'm Mengyue Lu, a Baylor University student passionate about storytelling. My journey at Baylor was
+                    more than just an academic pursuit; it was a voyage into the vast ocean of scholarly and fictional
+                    literature. My time at Baylor allowed me to find and express my storytelling voice. </p>
+                <h4>Academic Journey</h4>
+                <p>At Baylor, I majored in English, diving into the depths of classic literature, contemporary works,
+                    and scholarly criticism. It allowed me to break down large and complex paragraphs and sentences to
+                    find their meanings. My minor in Creative Writing shaped my storytelling craft and gave me a deeper
+                    appreciation for a good story. </p>
+                <h4>Writing Focus</h4>
+                <p>My writing mainly explores the exciting and limitless realms of high fantasy, dystopian, and
+                    detective thrillers. These genres allow me to weave complex narratives that blur the lines between
+                    the real and the surreal. I take pride in my back-and-forth conversations between characters and
+                    fantastical worlds.
+                </p>
+                <h4>Writing Style and Influence</h4>
+                <p>I strive to create believable dialogue within the realm of my world, with characters that are more
+                    than just two dimensions. I often use back-and-forth interactions to weave in details of the world
+                    and sprinkle details within the narration to ignore info dumps. My inspiration comes from Kugane
+                    Maruyama, the author of the famous light novel Overlord. I love how detailed his world is and try to
+                    make my stories as intricate as his.</p>
+
+                <h4>Aspirations and Personal Interests</h4>
+                <p>Looking ahead, I aim to contribute to an ever-expanding world of electronic entertainment. When not
+                    writing, I enjoy experiencing story-driven games such as Life is Strange and The Witcher 3: Wild
+                    Hunt, which complements my creative imagination.</p>
+
+                <h3>My Short Stories</h3>
+                <!-- Inside the "My Works" Section -->
+                <div>
+                    <a class="work-button"
+                        href="https://docs.google.com/document/d/1GP79jr4Z1NWQbvtV8pkcKPAdwGQR-W4W/edit?usp=sharing&ouid=115214093356624180879&rtpof=true&sd=true"
+                        target="_blank">Finding Empathy</a>
+                    <a class="work-button"
+                        href="https://docs.google.com/document/d/1vkrtrP6NUogyJUY0KSkwuW6v-0g_oCV-/edit?usp=sharing&ouid=115214093356624180879&rtpof=true&sd=true"
+                        target="_blank">Insanity Case</a>
+                    <!-- Add more buttons as needed -->
+                </div>
+                <h3>My Analysis Essays</h3>
+                <div>
+                    <a class="work-button"
+                        href="https://docs.google.com/document/d/1qgTBMj0PNWwJ6HwT3kF9j5LonLdaFJrZ/edit?usp=sharing&ouid=115214093356624180879&rtpof=true&sd=true"
+                        target="_blank">Recommendation Report</a>
+                    <a class="work-button"
+                        href="https://docs.google.com/document/d/1_ZupEAzamP3zQ4tVSUIHrh4jkxTNF3Pg/edit?usp=drive_link&ouid=115214093356624180879&rtpof=true&sd=true"
+                        target="_blank">The Prairies Analysis</a>
+                    <a class="work-button"
+                        href="https://docs.google.com/document/d/1a_t6fZHdGuk_iQiWoUI6D5cNoS6oGjEo/edit?usp=sharing&ouid=115214093356624180879&rtpof=true&sd=true"
+                        target="_blank">Do Deepfakes Threaten Society</a>
+                    <!-- Add more buttons as needed -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <section aria-label="Email">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Get In Contact</h2>
+                    <h3>Shoot me an Email</h3>
+                </hgroup>
+                <p>To get in touch, please email me at: <a href="mailto:your-email@example.com"
+                        class="email-link">mengyuelu2002@gmail.com</a></p>
+                <p>Or Send Me a Message: <strong style="color: white;">4693879954</strong></p>
+
+            </article>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const nav = document.querySelector('nav');
+            const subscribeSection = document.querySelector('section[aria-label="Subscribe"]');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', debounce(function () {
+                const currentScrollY = window.scrollY;
+                if (currentScrollY < lastScrollY) {
+                    nav.classList.remove('nav-hidden');
+                    subscribeSection.classList.remove('subscribe-hidden');
+                } else {
+                    nav.classList.add('nav-hidden');
+                    subscribeSection.classList.add('subscribe-hidden');
+                }
+                lastScrollY = currentScrollY;
+            }, 50));
+
+            function debounce(func, wait, immediate) {
+                var timeout;
+                return function () {
+                    var context = this, args = arguments;
+                    clearTimeout(timeout);
+
+                    timeout = setTimeout(function () {
+                        timeout = null;
+                        if (!immediate) func.apply(context, args);
+                    }, wait);
+                    if (immediate && !timeout) func.apply(context, args);
+                };
+            }
+        });
+    </script>
+</body>
