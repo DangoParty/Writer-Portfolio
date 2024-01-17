@@ -92,8 +92,24 @@
 
         .email-link {
             color: white;
-            /* Or any color of your choice */
             font-weight: bold;
+        }
+
+        .profile-pic-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-pic {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            .profile-pic {
+                max-width: 150px;
+            }
         }
     </style>
 </head>
@@ -103,12 +119,13 @@
         <ul>
             <li><strong>Portfolio Showcase</strong></li>
         </ul>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact" role="button">Contact</a></li>
-        </ul>
+
     </nav>
+
+    <section class="profile-pic-section">
+        <img src="img/Profile picture.png" alt="Mengyue" class="profile-pic">
+    </section>
+
     <main class="container">
         <div class="grid">
             <section>
@@ -150,7 +167,6 @@
                     Hunt, which complements my creative imagination.</p>
 
                 <h3>My Short Stories</h3>
-                <!-- Inside the "My Works" Section -->
                 <div>
                     <a class="work-button"
                         href="https://docs.google.com/document/d/1GP79jr4Z1NWQbvtV8pkcKPAdwGQR-W4W/edit?usp=sharing&ouid=115214093356624180879&rtpof=true&sd=true"
@@ -158,9 +174,8 @@
                     <a class="work-button"
                         href="https://docs.google.com/document/d/1vkrtrP6NUogyJUY0KSkwuW6v-0g_oCV-/edit?usp=sharing&ouid=115214093356624180879&rtpof=true&sd=true"
                         target="_blank">Insanity Case</a>
-                    <!-- Add more buttons as needed -->
                 </div>
-                <h3>My Analysis Essays</h3>
+                <h3>My Essays</h3>
                 <div>
                     <a class="work-button"
                         href="https://docs.google.com/document/d/1qgTBMj0PNWwJ6HwT3kF9j5LonLdaFJrZ/edit?usp=sharing&ouid=115214093356624180879&rtpof=true&sd=true"
@@ -171,7 +186,6 @@
                     <a class="work-button"
                         href="https://docs.google.com/document/d/1a_t6fZHdGuk_iQiWoUI6D5cNoS6oGjEo/edit?usp=sharing&ouid=115214093356624180879&rtpof=true&sd=true"
                         target="_blank">Do Deepfakes Threaten Society</a>
-                    <!-- Add more buttons as needed -->
                 </div>
             </section>
         </div>
@@ -185,7 +199,7 @@
                 </hgroup>
                 <p>To get in touch, please email me at: <a href="mailto:your-email@example.com"
                         class="email-link">mengyuelu2002@gmail.com</a></p>
-                <p>Or Send Me a Message: <strong style="color: white;">4693879954</strong></p>
+                <p>Or send me a message: <strong style="color: white;">4693879954</strong></p>
 
             </article>
         </div>
